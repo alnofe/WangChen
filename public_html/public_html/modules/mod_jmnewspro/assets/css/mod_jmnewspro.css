@@ -1,0 +1,103 @@
+/*
+#------------------------------------------------------------------------
+# Package - JoomlaMan JMSlideShow
+# Version 1.0
+# -----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright © 2012 - 2013 JoomlaMan.com. All Rights Reserved.
+# @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
+# Websites: http://www.JoomlaMan.com
+#------------------------------------------------------------------------
+*/
+.jmnewspro{
+    padding: 20px 0;
+    position: relative;
+    direction: ltr;
+}
+.jmnewspro .slide-item-image{
+    border: 1px solid #ebebeb;
+    padding: 2px;
+}
+.jmnewspro .slide-item-title{
+    color: #FFC92B;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.jmnewspro .slide-item-title a:hover, span.slide-item-readmore a:hover{
+	color: #FE8F0A;
+}
+.jmnewspro .slide-item-title a, span.slide-item-readmore a{
+	color: #FFC92B;
+	font-size:16px;
+}
+.slide-item-desc {
+	font-size:12px;
+	padding-bottom:10px;
+}
+.jmnewspro .jmnewspro-prev,.jmnewspro .jmnewspro-next{
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -99px;
+    top: 75px;
+    width: 20px;
+}
+.jmnewspro .jmnewspro-prev{
+    background: url("../images/button.png") no-repeat scroll 0 -40px transparent;
+}
+.jmnewspro .jmnewspro-next{
+    background: url("../images/button.png") no-repeat scroll 0 0 transparent;
+    right: 0;
+}
+.jmnewspro .jmnewsprohover{
+    background: rgba(0,0,0,0.8);
+		color: #e5e5e5;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    text-align: center;
+}
+.jmnewspro .jmnewsprohover .slide-inner{
+    padding: 12px 22px;
+}
+.jmnewspro .bx-wrapper {
+    position: relative;
+    margin: 0 auto 0;
+    padding: 0;
+    *zoom: 1;
+}
+.jmnewspro .bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+/** THEME
+===================================*/
+.jmnewspro .bx-pager ul{
+    list-style-type: none !important;
+    margin: 3px 0 0 !important;
+    padding: 0 !important;
+    float: left;
+}
+.jmnewspro .bx-pager ul li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0 4px 0 0 !important;
+}
+.jmnewspro .bx-pager ul li a{
+    background: url('../images/interface.png') no-repeat 50% 0;
+    text-indent: -999em;
+    cursor: pointer;
+    display: block;
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+}
+.jmnewspro .bx-pager ul li a:hover,.jmnewspro .bx-pager ul li a.active {
+    background-position: 50% -8px;
+}
+.jmnewspro .bx-wrapper .bx-controls-direction{
+    display: none;
+}

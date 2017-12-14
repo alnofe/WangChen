@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="module" client="site" method="upgrade">
+	<name>JM News Pro</name>
+	<version>2.1.6</version>
+	<creationDate>June 2014</creationDate>
+	<author>JoomlaMan.com</author>
+	<copyright>Copyright 2013 - joomlaman.com</copyright>
+	<license>http://www.gnu.org/copyleft/lgpl.html</license>
+	<authorEmail>support@joomlaman.com</authorEmail>
+	<authorUrl>http://www.joomlaman.com</authorUrl>
+	<scriptfile>script.php</scriptfile>
+	<description><![CDATA[
+		<style type="text/css">
+			span.readonly { padding: 10px; font-family: Arial; font-size:13px !important; font-weight: normal !important; text-align: justify; color: #4d4d4d; line-height: 24px; }
+			span.readonly h1 { clear:both; font-family: Georgia, sans-serif; font-size:38px; margin:30px 20px 23px; padding:0px 0px 24px 10px; color:#333; border-bottom: 1px solid #eee; font-weight: normal; }
+			span.readonly p { margin: 0 26px 10px }
+			span.readonly p a { color: #8e0b8c }
+			span.readonly p.homepage { margin-top: 30px }
+			span.readonly p.license { border-top: 1px solid #eee; font-size: 11px; margin: 30px 26px 0; padding: 6px 0; }
+		</style>
+		<span class='readonly'>
+			<h1>JM News Pro <small>ver. 2.1.6</small></h1>
+			<div>
+                v2.1.6<br>
+				+ Add menu Itemid for item link if item link Itemid is null( automatic choose home or menu active) by selected a display menu for each of slider source</br>
+			    v2.1.5<br> 
+				v2.1.4<br>
+				+ Add Random Items</br>
+			    + Add Icon Class For Custom Source</br>
+			    + Add View All Text</br>
+			    + Add Module Header</br>
+			    v2.1.1<br>
+			    + Fixed SEO</br>
+			    + Fixed Error SQL 1064</br>
+			    + Add Image Size From K2</br>
+				v2.1.0<br>
+				+ Update link target all source, supports basic Layout</br>
+				+ Update Custom Link Target on Custom Source</br>
+				+ Update Colorbox setting (Transition,Style,Width,Height)</br>
+				+ Fixed Title Link On Custom Source</br>
+				+ Fixed Hikashop Source</br>
+				+ Add js for two layout (Masonry,Portfolio)</br>
+				v2.0.0</br>
+				+ Add custom source</br>
+				+ not show pending items on content,k2</br>
+				+ Responsive defualt = YES</br>
+				+ Title length defualt = 50 Char</br>
+				+ Add layout porfolio + masory</br>
+				JMNP is new generation of our extensions dedicated to Joomla 2.5+.</br>
+				Basing on experiences gathered, we created probably the best tool to present articles for Joomla! Huge amount of options and possibilities of formatting causes JMNP is a complex tool in making www pages content attractive. JMNP is appropriate while preparing simple structures with an individual article, the same as, complex arrangements including few articles and a list of links.</br>
+				<div class='homepage'><a href='http://www.joomlaman.com/joomla-extensions/25-new.html' target='_blank'>Learn more at the JMNP project website.</a></div>
+				<div class='license'>JMNP is released under the <a target="_blank" href="http://www.gnu.org/licenses/gpl-2.0.html">GNU/GPL v2 license.</a></div>
+			</div>
+		</span>
+	]]>
+	</description>
+
+	<files>
+		<filename module="mod_jmnewspro">mod_jmnewspro.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<folder>classes</folder>
+		<folder>elements</folder>
+		<folder>language</folder>
+		<folder>images</folder>
+	</files>
+  <config>
+    <fields name="params"  addfieldpath="/modules/mod_jmnewspro/elements">
+      <fieldset name="basic">
+        <field type="asset" name="asset" path="modules/mod_jmnewspro/admin/assets/"></field>
+        <field type="text" class="jm-field" name="jmnewspro_item_width" label="MOD_JMNEWS_PRO_ITEM_WIDTH_LBL" default="200" description="MOD_JMNEWS_PRO_ITEM_WIDTH_DESC"/>
+        <field type="text" class="jm-field" name="jmnewspro_item_height" label="MOD_JMNEWS_PRO_ITEM_HEIGHT_LBL" default="150" description="MOD_JMNEWS_PRO_ITEM_HEIGHT_DESC"/>
+        <field type="text" class="jm-field" name="jmnewspro_minslide" label="MOD_JMNEWS_PRO_MIN_SLIDE_LBL" default="1" description="MOD_JMNEWS_PRO_MIN_SLIDE_DESC"/>
+        <field type="text" class="jm-field" name="jmnewspro_maxslide" label="MOD_JMNEWS_PRO_MAX_SLIDE_LBL" default="4" description="MOD_JMNEWS_PRO_MAX_SLIDE_DESC"/>
+        <field type="text" class="jm-field" name="jmnewspro_moveslide" label="MOD_JMNEWS_PRO_MOVE_SLIDE_LBL" default="0" description="MOD_JMNEWS_PRO_MOVE_SLIDE_DESC"/>
+        <field type="text" class="jm-field" name="jmnewspro_slidemargin" label="MOD_JMNEWS_PRO_SLIDE_MARGIN_LBL" default="10" description="MOD_JMNEWS_PRO_SLIDE_MARGIN_DESC"/>
+        <field name="jmnewspro_auto" type="list" class="jm-field single" default="true" label="MOD_JMNEWS_PRO_AUTO_LBL" description="MOD_JMNEWS_PRO_AUTO_DESC">
+          <option value="true">JYES</option>
+          <option value="false">JNO</option>
+        </field>
+        <field name="jmnewspro_timeout" type="text"  class="jm-field" default="4000" label="MOD_JMNEWS_PRO_TIMEOUT_LBL" description="MOD_JMNEWS_PRO_TIMEOUT_DESC"/>
+        <field name="jmnewspro_speed" type="text"  class="jm-field" default="500" label="MOD_JMNEWS_PRO_SPEED_LBL" description="MOD_JMNEWS_PRO_SPEED_DESC"/>
+        <field name="jmnewspro_touch" type="radio"  class="jm-field" default="1" label="MOD_JMNEWS_PRO_TOUCH_LBL" description="MOD_JMNEWS_PRO_TOUCH_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		<field type="text" class="jm-field" name="jmnewspro_viewall" label="MOD_JMNEWS_PRO_VIEW_ALL_LBL" default="" description="MOD_JMNEWS_PRO_VIEW_ALL_DESC"/>
+       	<field type="text" class="jm-field" name="jmnewspro_viewalltext" label="MOD_JMNEWS_PRO_VIEW_ALL_TEXT_LBL" default="VIEW ALL" description="MOD_JMNEWS_PRO_VIEW_ALL_TEXT_DESC"/>
+       	<field type="textarea" class="jm-field" name="jmnewspro_header" rows="5" cols="37" label="MOD_JMNEWS_PRO_HEADER_LBL" default="" description="MOD_JMNEWS_PRO_HEADER_DESC"/>
+        <field name="moduleclass_sfx" type="text"  class="jm-field" label="MOD_JMNEWS_PRO_MODULE_CLASS_SFX_LBL" description="MOD_JMNEWS_PRO_MODULE_CLASS_SFX_DESC"/>
+      </fieldset>
+      <fieldset name="source" label="MOD_JMNEWS_PRO_SOURCE_TAB_LBL">
+        <field name="slider_source" type="SlideSource" default="0" class="jm-field single" label="MOD_JMNEWS_PRO_SLIDER_SOURCE_LBL" description="MOD_JMNEWS_PRO_SLIDER_SOURCE_DESC"/>
+        <field name="jmnewspro_categories" class="jm-field multi" show_root="true" type="category" extension="com_content" multiple="true" size="10" label="MOD_JMNEWS_PRO_CATEGORY_LBL" description="MOD_JMNEWS_PRO_CATEGORY_DESC" />
+        <field name="jmnewspro_article_ids" show_root="true" type="text" class="jm-field" label="MOD_JMNEWS_PRO_SPECIAL_ARTICLES_IDS_LBL" description="MOD_JMNEWS_PRO_SPECIAL_ARTICLES_IDS_DESC" />
+        <field name="jmnewspro_k2_categories" class="jm-field multi" type="k2multicategories" extension="k2multicategories" default="" size="10" multiple="multiple" label="MOD_JMNEWS_PRO_K2_CATEGORY_LBL" description="MOD_JMNEWS_PRO_K2_CATEGORY_DESC" />
+        <field name="jmnewspro_k2_ids" show_root="true" type="text" class="jm-field" label="MOD_JMNEWS_PRO_K2_SPECIAL_ARTICLES_IDS_LBL" description="MOD_JMNEWS_PRO_K2_SPECIAL_ARTICLES_IDS_DESC" />
+        <field name="jmnewspro_hikashop_categories" class="jm-field multi" type="hikashopmulticategories" extension="hikashopmulticategories" default="" size="10" multiple="multiple" label="MOD_JMNEWS_PRO_HIKASHOP_CATEGORY_LBL" description="MOD_JMNEWS_PRO_HIKASHOP_CATEGORY_DESC" />
+        <field name="jmnewspro_hikashop_ids" show_root="true" type="text" class="jm-field" label="MOD_JMNEWS_PRO_PRODUCT_IDS_LBL" description="MOD_JMNEWS_PRO_PRODUCT_IDS_DESC" />
+        <field name="jmnewspro_file_image_url" show_root="true" type="media" class="jm-field" label="MOD_JMNEWS_PRO_FILE_IMAGE_URL_LBL" description="MOD_JMNEWS_PRO_FILE_IMAGE_URL_DESC" />
+        <field name="jmnewspro_file_image_title" type="text" class="jm-field" label="MOD_JMNEWS_PRO_FILE_IMAGE_TITLE_LBL" description="MOD_JMNEWS_PRO_FILE_IMAGE_TITLE_DESC" />
+        <field name="jmnewspro_file_image_icon" type="text" class="jm-field" label="MOD_JMNEWS_PRO_FILE_IMAGE_ICON_LBL" description="MOD_JMNEWS_PRO_FILE_IMAGE_ICON_DESC" />
+        <field name="jmnewspro_file_image_title_link" type="text" class="jm-field" label="MOD_JMNEWS_PRO_FILE_IMAGE_TITLE_LINK_LBL" description="MOD_JMNEWS_PRO_FILE_IMAGE_TITLE_LINK_DESC" />
+       	<field name="jmnewspro_file_image_title_link_target" type="list" class="jm-field single" label="MOD_JMNEWS_PRO_FILE_IMAGE_TITLE_LINK_TARGET_LBL" description="MOD_JMNEWS_PRO_FILE_IMAGE_TITLE_LINK_TARGET_DESC" >
+			<option value="none">Use Global</option>
+			<option value="_blank">Blank</option>
+			<option value="_parent">Parent</option>
+			<option value="_self">Self</option>
+			<option value="_top">Top</option>
+			<option value="framename">Framename</option>
+		</field>
+       	<field name="jmnewspro_file_image_desc" type="textarea" rows="5" cols="37" class="jm-field s9" label="MOD_JMNEWS_PRO_FILE_IMAGE_DESC_LBL" description="MOD_JMNEWS_PRO_FILE_IMAGE_DESC_DESC" />
+        <field name="jmnewspro_file_image" type="DirectorySource" class="jm-field s9" label="MOD_JMNEWS_PRO_FILE_IMAGE_LBL" description="MOD_JMNEWS_PRO_FILE_IMAGE_DESC" />
+        <field name="jmnewspro_image_source" type="list" class="jm-field single" default="0" label="MOD_JMNEWS_PRO_IMAGE_SOURCE_LBL" description="MOD_JMNEWS_PRO_IMAGE_SOURCE_DESC">
+          <option value="0">MOD_JMNEWS_PRO_IMAGE_SOURCE_FIELD</option>
+          <option value="1">MOD_JMNEWS_PRO_IMAGE_SOURCE_CONTENT</option>
+        </field>
+        <field name="jmnewspro_article_image_source" type="list" class="jm-field single" default="0" label="MOD_JMNEWS_PRO_ARTICLE_IMAGE_SOURCE_LBL" description="MOD_JMNEWS_PRO_ARTICLE_IMAGE_SOURCE_DESC">
+          <option value="1">MOD_JMNEWS_PRO_ARTICLE_IMAGE_SOURCE_INTRO_FIELD</option>
+          <option value="2">MOD_JMNEWS_PRO_ARTICLE_IMAGE_SOURCE_FULL_FIELD</option>
+          <option value="3">MOD_JMNEWS_PRO_IMAGE_SOURCE_CONTENT</option>
+        </field>
+        <field name="jmnewspro_k2_image_size" default="L" type="list"  class="jm-field" label="MOD_JMNEWS_PRO_K2_IMAGE_SIZE_LBL" description="MOD_JMNEWS_PRO_K2_IMAGE_SIZE_DESC" >
+          <option value="XS">XSmall</option>
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+          <option value="XL">XLarge</option>
+        </field>
+        <field name="jmnewspro_ordering" type="list" class="jm-field single" default="0" label="MOD_JMNEWS_PRO_ORDERING_LBL" description="MOD_JMNEWS_PRO_ORDERING_DESC">
+          <option value="ASC">JASC</option>
+          <option value="DESC">JDESC</option>
+          <option value="RAND()">JRAND</option>
+        </field>
+        <field name="jmnewspro_orderby" type="list" class="jm-field single" default="0" label="MOD_JMNEWS_PRO_ORDER_BY_LBL" description="MOD_JMNEWS_PRO_ORDER_BY_DESC">
+          <option value="1">JTITLE</option>
+          <option value="2">JORDERING</option>
+          <option value="3">JPOSTED_DATE</option>
+        </field>
+        <field name="jmnewspro_hikashop_orderby" type="list" class="jm-field single" default="0" label="MOD_JMNEWS_PRO_ORDER_BY_LBL" description="MOD_JMNEWS_PRO_ORDER_BY_DESC">
+          <option value="product_id">MOD_JMNEWS_PRO_HIKASHOP_ORDERBY_ID</option>
+          <option value="product_name">MOD_JMNEWS_PRO_HIKASHOP_ORDERBY_NAME</option>
+          <option value="product_quantity">MOD_JMNEWS_PRO_HIKASHOP_ORDERBY_QUANTITY</option>
+          <option value="product_hit">MOD_JMNEWS_PRO_HIKASHOP_ORDERBY_HITS</option>
+          <option value="product_created">MOD_JMNEWS_PRO_HIKASHOP_ORDERBY_DATECREATE</option>
+          <option value="product_sales">MOD_JMNEWS_PRO_HIKASHOP_ORDERBY_SALE</option>
+        </field>
+        <field name="jmnewspro_display_menu_content" type="displaymenu" selecttype="content" default="0" class="jm-field single" label="MOD_JMNEWS_PRO_DISPLAY_MENU_LBL" description="MOD_JMNEWS_PRO_DISPLAY_MENU_DESC"/>
+        <field name="jmnewspro_display_menu_k2" type="displaymenu" selecttype="k2" default="0" class="jm-field single" label="MOD_JMNEWS_PRO_DISPLAY_MENU_LBL" description="MOD_JMNEWS_PRO_DISPLAY_MENU_DESC"/>                
+        <field name="jmnewspro_display_menu_product" type="displaymenu" selecttype="product" default="0" class="jm-field single" label="MOD_JMNEWS_PRO_DISPLAY_MENU_LBL" description="MOD_JMNEWS_PRO_DISPLAY_MENU_DESC"/>
+        <field name="jmnewspro_count" default="10" type="text"  class="jm-field" label="MOD_JMNEWS_PRO_COUNT_LBL" description="MOD_JMNEWS_PRO_COUNT_DESC" />
+      </fieldset>
+      <fieldset name="advanced">
+        <field name="jmnewspro_layout" type="layout" default="default" class="jm-field" label="MOD_JMNEWS_PRO_LAYOUT_LBL" description="MOD_JMNEWS_PRO_LAYOUT_DECS"/>
+        <field name="jmnewspro_include_jquery" type="list" class="jm-field single" default="2" label="MOD_JMNEWS_PRO_INCLUDE_JQUERY_LBL" description="MOD_JMNEWS_PRO_INCLUDE_JQUERY_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+          <option value="2">JMAUTO</option>
+        </field>
+        <field name="jmnewspro_show_image" type="radio" default="1" class="jm-field" value="1" label="MOD_JMNEWS_PRO_SHOW_IMAGE_LBL" description="MOD_JMNEWS_PRO_SHOW_IMAGE_DESC">
+		  <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_image_style" type="list" class="jm-field single" default="1" label="MOD_JMNEWS_PRO_IMAGE_STYLE_LBL" description="MOD_JMNEWS_PRO_IMAGE_STYLE_DESC">
+          <option value="original">MOD_JMNEWS_PRO_IMAGE_STYLE_ORIGINAL</option>
+          <option value="fill">MOD_JMNEWS_PRO_IMAGE_STYLE_FILL</option>
+          <option value="fit">MOD_JMNEWS_PRO_IMAGE_STYLE_FIT</option>
+          <option value="stretch">MOD_JMNEWS_PRO_IMAGE_STYLE_STRETCH</option>
+        </field>
+        <field name="jmnewspro_image_link" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_IMAGE_LINK_LBL" description="MOD_JMNEWS_PRO_IMAGE_LINK_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_show_title" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_SHOW_TITLE_LBL" description="MOD_JMNEWS_PRO_SHOW_TITLE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		<field name="jmnewspro_title_length" type="text" class="jm-field" default="50" label="MOD_JMNEWS_PRO_TITLE_LENGTH_LBL" description="MOD_JMNEWS_PRO_TITLE_LENGTH_DESC"/>
+        <field name="jmnewspro_title_link" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_TITLE_LINK_LBL" description="MOD_JMNEWS_PRO_TITLE_LINK_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_show_category" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_SHOW_CATEGORY_LBL" description="MOD_JMNEWS_PRO_SHOW_CATEGORY_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_show_price" type="radio" class="jm-field" default="0" label="MOD_JMNEWS_PRO_SHOW_PRICE_LBL" description="MOD_JMNEWS_PRO_SHOW_PRICE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_show_desc" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_SHOW_DESC_LBL" description="MOD_JMNEWS_PRO_SHOW_DESC_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_desc_length" type="text" class="jm-field" default="150" label="MOD_JMNEWS_PRO_DESC_LENGTH_LBL" description="MOD_JMNEWS_PRO_DESC_LENGTH_LBL"/>
+        <field name="jmnewspro_desc_html" type="text" class="jm-field s1 s2 s3 s4 s5 s6 s7 s8" default="" label="MOD_JMNEWSPRO_DESC_HTML_LBL" description="MOD_JMNEWSPRO_DESC_HTML_DESC"/>
+        <field name="jmnewspro_show_readmore" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_SHOW_READMORE_LBL" description="MOD_JMNEWS_PRO_SHOW_READMORE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_readmore_text" type="text" class="jm-field" default="Read more" label="MOD_JMNEWS_PRO_READMORE_TEXT_LBL" description="MOD_JMNEWS_PRO_HOVER_DECS"/>
+        <field name="jmnewspro_link_target" type="list" class="jm-field single" label="MOD_JMNEWS_PRO_LINK_TARGET_LBL" description="MOD_JMNEWS_PRO_LINK_TARGET_DESC" >
+			<option value="_blank">Blank</option>
+			<option value="_parent">Parent</option>
+		</field>
+		<field name="jmnewspro_hover" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_HOVER_OVERLAY_LBL" description="MOD_JMNEWS_PRO_READMORE_TEXT_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_onhover" type="radio" class="jm-field" default="true" label="MOD_JMNEWS_PRO_ONHOVER_OVERLAY_LBL" description="MOD_JMNEWS_PRO_ONHOVER_DESC">
+          <option value="false">JNO</option>
+          <option value="true">JYES</option>
+        </field>
+        <field name="jmnewspro_resize" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_RESIZE_LBL" description="MOD_JMNEWS_PRO_RESIZE_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_mode" type="list" class="jm-field single" default="horizontal" label="MOD_JMNEWS_PRO_MODE_LBL" description="MOD_JMNEWS_PRO_MODE_DESC">
+          <option value="horizontal">horizontal</option>
+          <option value="vertical">vertical</option>
+          <option value="fade">fade</option>
+		</field>
+		<field name="jmnewspro_easing" type="list" class="jm-field single" default="swing" label="MOD_JMNEWS_PRO_EASING_LBL" description="MOD_JMNEWS_PRO_EASING_DESC">
+          <option value="swing">swing</option>
+          <option value="easeInQuad">easeInQuad</option>
+          <option value="easeOutQuad">easeOutQuad</option>
+          <option value="easeInOutQuad">easeInOutQuad</option>
+          <option value="easeInCubic">easeInCubic</option>
+          <option value="easeOutCubic">easeOutCubic</option>
+          <option value="easeInOutCubic">easeInOutCubic</option>
+          <option value="easeInQuart">easeInQuart</option>
+          <option value="easeOutQuart">easeOutQuart</option>
+          <option value="easeInOutQuart">easeInOutQuart</option>
+          <option value="easeInQuint">easeInQuint</option>
+          <option value="easeOutQuint">easeOutQuint</option>
+          <option value="easeInOutQuint">easeInOutQuint</option>
+          <option value="easeInSine">easeInSine</option>
+          <option value="easeOutSine">easeOutSine</option>
+          <option value="easeInOutSine">easeInOutSine</option>
+          <option value="easeInExpo">easeInExpo</option>
+          <option value="easeOutExpo">easeOutExpo</option>
+          <option value="easeInOutExpo">easeInOutExpo</option>
+          <option value="easeInCirc">easeInCirc</option>
+          <option value="easeOutCirc">easeOutCirc</option>
+          <option value="easeInOutCirc">easeInOutCirc</option>
+          <option value="easeInElastic">easeInElastic</option>
+          <option value="easeOutElastic">easeOutElastic</option>
+          <option value="easeInOutElastic">easeInOutElastic</option>
+          <option value="easeInBack">easeInBack</option>
+          <option value="easeOutBack">easeOutBack</option>
+          <option value="easeInOutBack">easeInOutBack</option>
+          <option value="easeInBounce">easeInBounce</option>
+          <option value="easeOutBounce">easeOutBounce</option>
+          <option value="easeInOutBounce">easeInOutBounce</option>
+        </field>
+      </fieldset>
+      <fieldset name="Colorbox">
+      	<field name="jmnewspro_show_popup" type="radio" class="jm-field" default="1" label="MOD_JMNEWS_PRO_SHOW_POPUP_LBL" description="MOD_JMNEWS_PRO_SHOW_POPUP_DESC">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+		<field name="jmnewspro_popup_text" type="text" class="jm-field" default="Zoom" label="MOD_JMNEWS_PRO_POPUP_TEXT_LBL" description="MOD_JMNEWS_PRO_POPUP_TEXT_DESC"/>
+      	<field name="jmnewspro_colorbox_transition" type="list" class="jm-field single" default="" label="MOD_JMNEWS_PRO_COLORBOX_TRANSITION_LBL" description="MOD_JMNEWS_PRO_COLORBOX_TRANSITION_DESC">
+          <option value=",transition:'none'">None</option>
+           <option value="">Elastic</option>
+          <option value=",transition:'fade'">Fade</option>
+          <option value=",slideshow:'true'">Slideshow</option>
+        </field>
+        <field name="jmnewspro_colorbox_style" type="list" class="jm-field single" default="colorbox.css" label="MOD_JMNEWS_PRO_COLORBOX_STYLE_LBL" description="MOD_JMNEWS_PRO_COLORBOX_STYLE_DESC">
+          <option value="colorbox.css">Default</option>
+        </field>
+       	<field name="jmnewspro_colorbox_width" type="text" class="jm-field" default="auto" label="MOD_JMNEWS_PRO_COLORBOX_WIDTH_LBL" description="MOD_JMNEWS_PRO_COLORBOX_WIDTH_DESC"/>
+        <field name="jmnewspro_colorbox_height" type="text" class="jm-field" default="auto" label="MOD_JMNEWS_PRO_COLORBOX_HEIGHT_LBL" description="MOD_JMNEWS_PRO_COLORBOX_HEIGHT_DESC"/>
+      </fieldset>
+      <fieldset name="navigator" label="MOD_JMNEWS_PRO_NAVIGATOR_TAB_LBL">
+        <field name="jmnewspro_show_nav_buttons" type="radio" class="jm-field showhide" default="1" value="1" label="MOD_JMNEWS_PRO_SHOW_NAV_BUTTONS_LBL" description="MOD_JMNEWS_PRO_SHOW_NAV_BUTTONS_DESC">
+		  <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_show_pager" type="radio" class="jm-field showhide" default="1" value="1" label="MOD_JMNEWS_PRO_SHOW_PAGER_LBL" description="MOD_JMNEWS_PRO_SHOW_PAGER_DESC">
+		  <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+        <field name="jmnewspro_pager_position" type="list" class="jm-field single" default="bottomleft" label="MOD_JMNEWS_PRO_PAGER_POSITION_LBL" description="MOD_JMNEWS_PRO_PAGER_POSITION_DESC">
+          <option value="topleft">MOD_JMNEWS_PRO_POSITION_TOP_LEFT</option>
+          <option value="topright">MOD_JMNEWS_PRO_POSITION_TOP_RIGHT</option>
+          <option value="bottomleft">MOD_JMNEWS_PRO_POSITION_BOTTOM_LEFT</option>
+          <option value="bottomright">MOD_JMNEWS_PRO_POSITION_BOTTOM_RIGHT</option>
+        </field>
+		<field name="jmnewspro_text_next" type="text" class="jm-field" default="" label="MOD_JMNEWS_PRO_TEXT_NEXT_LBL" description="MOD_JMNEWS_PRO_TEXT_NEXT_DESC" filter="raw"/>
+		<field name="jmnewspro_text_prev" type="text" class="jm-field" default="" label="MOD_JMNEWS_PRO_TEXT_PREV_LBL" description="MOD_JMNEWS_PRO_TEXT_PREV_DESC" filter="raw"/>
+		<field name="jmnewspro_next_selector" type="text" class="jm-field" default=".jmnewspro-next" label="MOD_JMNEWS_PRO_NEXT_SELECTOR_LBL" description="MOD_JMNEWS_PRO_NEXT_SELECTOR_DESC" filter="raw"/>
+		<field name="jmnewspro_prev_selector" type="text" class="jm-field" default=".jmnewspro-prev" label="MOD_JMNEWS_PRO_PREV_SELECTOR_LBL" description="MOD_JMNEWS_PRO_PREV_SELECTOR_DESC" filter="raw"/>
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers>
+        <server type="extension" name="JM News Pro" priority="1">http://extensions.joomlaman.com/jmnewspro/update.xml</server>
+	</updateservers>
+</extension>

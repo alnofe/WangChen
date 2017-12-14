@@ -1,0 +1,200 @@
+/*
+#------------------------------------------------------------------------
+# Package - JoomlaMan JMSlideShow
+# Version 1.0
+# -----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright © 2012 - 2013 JoomlaMan.com. All Rights Reserved.
+# @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
+# Websites: http://www.JoomlaMan.com
+#------------------------------------------------------------------------
+*/
+.jmnewspro.layout1 {
+  padding: 20px 0;
+  position: relative;
+  color: #E5E5E5;
+  direction: ltr;
+}
+.jmnewspro.layout1  .slide-item-image{
+  border: 1px solid #ebebeb;
+  padding: 2px;
+}
+.jmnewspro.layout1  .slide-item-title{
+  color: #FFC92B;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.jmnewspro.layout1  .slide-item-title a:hover, 
+.jmnewspro.layout1 span.slide-item-readmore a:hover{
+  color: #FE8F0A;
+}
+.jmnewspro.layout1  .slide-item-title a, 
+.jmnewspro.layout1 span.slide-item-readmore a{
+  color: #FFC92B;
+  font-size:16px;
+}
+.jmnewspro.layout1 .slide-item-desc {
+  font-size:12px;
+  padding-bottom:10px;
+}
+.jmnewspro.layout1 .jmnewspro-prev a,
+.jmnewspro.layout1 .jmnewspro-next a{
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 75px;
+  width: 20px;
+}
+.jmnewspro.layout1 .jmnewspro-prev a{
+  background: url("../images/button.png") no-repeat scroll 0 -40px transparent;
+}
+.jmnewspro.layout1 .jmnewspro-next a{
+  background: url("../images/button.png") no-repeat scroll 0 0 transparent;
+  right: 0;
+}
+.jmnewspro.layout1 .slide-inner{
+  padding:0 !important;
+}
+.jmnewspro.layout1 .slide-inner .padding{
+  padding: 0 8px !important
+}
+.jmnewspro.layout1 .bx-wrapper {
+  position: relative;
+  margin: 0 auto 0;
+  padding: 0;
+  *zoom: 1;
+}
+.jmnewspro.layout1 .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+	width:100%;
+}
+/** THEME
+===================================*/
+.jmnewspro.layout1 .bx-pager ul{
+  list-style-type: none !important;
+  margin: 3px 0 0 !important;
+  padding: 0 !important;
+  float: left;
+}
+.jmnewspro.layout1 .bx-pager ul li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px 0 0 !important;
+}
+.jmnewspro.layout1 .bx-pager ul li a{
+  background: url('../images/interface.png') no-repeat 50% 0;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+.jmnewspro.layout1 .bx-pager ul li a:hover,
+.jmnewspro.layout1 .bx-pager ul li a.active {
+  background-position: 50% -8px;
+}
+/** CSS3 effect
+===================================*/
+.jmnewspro.layout1 .slide-item-wrap-item img {
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.jmnewspro.layout1 .slide-item-wrap-item .slide-item-desc-warp {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+
+}
+.jmnewspro.layout1 .slide-item-wrap-item .slide-item-title {
+  -webkit-transform: translateY(-100px);
+  -moz-transform: translateY(-100px);
+  -o-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+}
+.jmnewspro.layout1 .slide-item-wrap-item .slide-item-desc {
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.jmnewspro.layout1 .slide-item-wrap-item:hover img {
+  -webkit-transform: scale(1.1,1.1);
+  -moz-transform: scale(1.1,1.1);
+  -o-transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+.jmnewspro.layout1 .slide-item-wrap-item .slide-item-readmore .slide-item-readmore a {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.jmnewspro.layout1 .slide-item-wrap-item:hover .slide-item-desc-warp {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.jmnewspro.layout1 .slide-item-wrap-item:hover .slide-item-title,
+.jmnewspro.layout1 .slide-item-wrap-item:hover .slide-item-desc,
+.jmnewspro.layout1 .slide-item-wrap-item:hover .slide-item-readmore a {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.jmnewspro.layout1 .slide-item-wrap-item:hover .slide-item-desc {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.jmnewspro.layout1 .slide-item-wrap-item:hover .slide-item-readmore a {
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}

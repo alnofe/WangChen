@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Content - Slideshare25</name>
+	<author>ot2sen</author>
+	<creationDate>21 June 2014</creationDate>
+	<copyright>2007-2014 Ole Bang Ottosen</copyright>
+	<license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<authorEmail>info@ot2sen.dk</authorEmail>
+	<authorUrl>http://www.ot2sen.dk</authorUrl>
+	<version>1.4.0</version>
+	<description>PLG_SLIDESHARE25_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="slideshare25">slideshare25.php</filename>
+		<folder>language</folder>
+	</files>
+	<languages folder="lang">
+        <language tag="en-GB">en-GB.plg_content_slideshare25.ini</language>
+		<language tag="en-GB">en-GB.plg_content_slideshare25.sys.ini</language>
+        <language tag="da-DK">da-DK.plg_content_slideshare25.ini</language>
+		<language tag="da-DK">da-DK.plg_content_slideshare25.sys.ini</language>
+		<language tag="it-IT">it-IT.plg_content_slideshare25.ini</language>
+		<language tag="it-IT">it-IT.plg_content_slideshare25.sys.ini</language>
+    </languages>
+    <config><fields name="params"><fieldset name="basic" label="basic">
+        <field name="width" type="text" default="425" size="2" label="PLG_SLIDESHARE25_WIDTH_OF_PLAYER" description="PLG_SLIDESHARE25_INPUT_WIDTH_OF_PLAYER" />
+		<field name="height" type="text" default="350" size="2" label="PLG_SLIDESHARE25_HEIGHT_OF_PLAYER" description="PLG_SLIDESHARE25_INPUT_HEIGHT_OF_PLAYER" />
+	<field name="alignslide" type="list" label="PLG_SLIDESHARE25_ALIGNMENT" default="left" description="PLG_SLIDESHARE25_SET_THE_ALIGNMENT_OF_THE_SLIDE">
+			<option value="left">PLG_SLIDESHARE25_LEFT</option>
+			<option value="right">PLG_SLIDESHARE25_RIGHT</option>
+			<option value="center">PLG_SLIDESHARE25_CENTER</option>
+	</field>
+	<field name="related" type="list" label="PLG_SLIDESHARE25_RELATED" default="1" description="PLG_SLIDESHARE25_SHOW_RELATED_SLIDES">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+	</field>
+	</fieldset></fields></config>
+	<updateservers>
+		<server type="extension" priority="2" name="Slideshare Plugin updates">http://www.ot2sen.eu/update/slideshare/extension.xml</server>
+	</updateservers>
+</extension>

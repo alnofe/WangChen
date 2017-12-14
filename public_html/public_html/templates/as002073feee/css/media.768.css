@@ -1,0 +1,384 @@
+/***************************************************************************************/
+/*
+/*		Author: AS Designing
+/*		Author URI: http://www.asdesigning.com
+/*		Theme URI: http://www.astemplates.com
+/*		
+/*		Note: Design for Portrait tablets
+/*
+/***************************************************************************************/
+
+@media (max-width: 767px) 
+{
+
+	body
+	{
+		padding: 0 !important;
+	}
+	
+	.container
+	{
+		margin-left: 20px !important;
+		margin-right: 20px !important;
+	}
+	
+	#content-row .container .content-inner
+	{
+		margin-left: 0;
+	}
+	
+	#header-row
+	{
+		position: relative;
+	}
+	
+	#header-wrapper, #content-wrapper, .top-wrapper, .top-wrapper .container, #footer-row 
+	{
+		width: auto;
+		
+	}
+		
+	#header-wrapper
+	{
+		margin-top: 0;
+		padding: 0;
+		position: relative;
+	}
+	
+	#slider-row .row
+	{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	
+	.camera_prev, 
+	.camera_next, 
+	.camera_commands,
+	.camera_target_content,
+  	.camera_pag
+	{
+		display: none;
+	}
+	
+  
+  
+	#header-row .mod-search
+	{
+		margin-left: 40px;
+	}
+	
+	#header-top-row #logo
+	{
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	#header-row #top-search .search,
+	#header-row .moduletable.social .nav,
+	#header-row #top-search .moduletable.social, 
+	#header-row #top-search .moduletable.social .nav
+	{
+		float: none;
+		text-align: center;
+	}
+	
+	#header-top-row .moduletable.call-us
+	{
+		margin: 0px;
+		font-size: 14px;	
+	}
+	
+	#header-row .moduletable.social
+	{
+		margin: 0px 0px 10px 0px;	
+	}
+	
+	#header-row #top-search .moduletable
+	{
+		margin-bottom: 0;
+		width: 100%;
+	}
+	
+	#header-row .moduletable.social .nav
+	{
+		margin-top: 0px;
+	}
+	
+	#header-row #logo,
+	#header-row .logo
+	{
+		margin: 20px 0 0 !important;	
+		width: 100%;
+    	text-align: center;
+	}
+	
+	#header-row .navigation
+	{
+		float: none;
+		padding: 20px 40px 10px;	
+	}
+	
+	#header-row #as-menu
+	{
+		margin: 0px;	
+		padding: 0px !important;
+		min-height: 25px;
+	}
+	
+	#header-row .select-menu 
+	{
+		min-width: 400px !important;
+	}
+	
+	#header-row .select-menu option
+	{
+		padding: 2px 10px;
+	}
+
+	#slider-row
+	{
+		background-image: none;
+		padding-bottom: 0px;
+	}
+	
+	#featured-row .top 
+	{
+		margin-top: -30px;
+	}	
+	
+	#featured-row .top .mod-newsflash-adv .item
+	{
+		width: 100% !important;
+	}
+
+	#featured-row .mod-newsflash p 
+	{
+    	float: none;
+    	overflow: hidden;
+		width: 100%;
+	}
+	
+	#featured-row .mod-newsflash h2, 
+	#featured-row .mod-newsflash h3, 
+	#featured-row .mod-newsflash h4, 
+	#featured-row .mod-newsflash h5 
+	{
+		text-align: center;
+		font-size: 24px;
+	}
+	
+	#featured-row .mod-custom
+	{
+		padding-bottom: 0px;
+	}
+				
+	.mod-newsflash-adv__links .item__module
+	{
+		width: 48%;
+		margin: 0 1% 20px;
+		float: left;
+	}
+
+	#component .page-item, 
+	#component .page-featured, 
+	#component .page-blog, 
+	#component .page, 
+	#component .page-category 
+	{
+		padding-left: 0;
+		padding-right: 0;
+	}
+		
+	.page-blog .items-row.cols-3 .item_img.img-intro 
+	{
+		width: 98.5%;
+	}
+	
+	.page-blog .items-row .span6 .item
+	{
+		border-bottom: 1px solid #D4D4D4;
+		margin-bottom: 30px;
+		padding-bottom: 20px;
+		overflow: hidden;
+	}
+	
+	.page-blog .items-row.cols-2	
+	{
+		border-bottom: none;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		overflow: hidden;
+	}	
+	
+	.page-category__clients .item
+	{
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+	
+	.page-category__clients .item_img
+	{
+		float: left;
+		margin-right: 20px;
+		clear: none !important;
+	}
+	
+	.page-featured .items-row .item__featured
+	{
+		margin-bottom: 30px !important;
+	}
+			
+	.item-image.blog-image
+	{
+		float: none;
+		margin: 0 0 20px 0;
+	}
+
+	.img-full__left.span5
+	{
+		width: 50%;
+	}
+		
+	.row-fluid [class*="itemSpan"] 
+	{
+		display: block;
+		float: none;
+		margin-left: 0;
+		width: auto;
+	}
+	
+	.span9 .row-fluid [class*="span"] .img-intro__none,
+	.span9 .row-fluid [class*="span"] .img-full__none,
+	.span6 .row-fluid [class*="span"] .img-intro__none,
+	.span6 .row-fluid [class*="span"] .img-full__none
+	{
+		width: 98.5%;	
+	}
+	
+	.page-featured .cols-2 .column-1
+	{
+		border: none;
+		padding-right: 0px;	
+	}
+
+	.page-item
+	{
+		padding-bottom: 0px;
+	}
+	
+	.page-gallery
+	{
+		padding-left: 0;
+	}
+	
+	.page-gallery .item_img.img-intro
+	{
+		float: left;
+	}
+	
+	.page-gallery .mask .item_introtext
+	{
+		display: block;
+	}
+	
+	.page-gallery .well [class*="span"]
+	{
+		margin-bottom: 0;
+	}
+	
+	.thumbnails
+	{
+		margin-left: 0;
+	}
+	
+	#phocagallery-module-ri .mosaic 
+	{
+    	width: 170px !important;
+	}	
+	
+	.contact_form
+	{
+	}
+	
+	.contact_details
+	{
+		margin-bottom: 20px;
+	}
+	
+	.contact_details .span6
+	{
+		width: 50%;
+		float: left;
+	}
+	
+	.mod-search__aside .mod-search_searchword
+	{
+		width: 50%;
+	}
+	
+	.mod-login__aside .mod-login_username,
+	.mod-login__aside .mod-login_passwd
+	{
+		width: 50%;
+	}
+
+	aside
+	{
+		margin-top: 0px;
+	}
+	
+	#aside-row-1-left, #aside-row-2-left,
+	#aside-row-1-right, #aside-row-2-right
+	{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	aside .mod-search button.btn.btn-search 
+	{
+		margin-top: 0px;
+	}
+	
+	#footer
+	{
+		height: auto;
+	}
+	
+	#footer p
+	{
+		margin-bottom: 0;
+	}
+	
+	.mod-footer
+	{
+		position: relative;
+		top: -48px;
+	}
+	
+	.footer-row-1 .span3 .item_img,
+	.footer-row-1 .span4 .item_img,
+	.footer-row-1 .span3 img,
+	.footer-row-1 .span4 img	
+	{
+		width: auto;	
+	}
+	
+		
+	#footer-row .module_title.right
+	{
+		float: none;	
+	}
+	
+	#trademark,
+	#copyright-menu
+	{
+		float: none;
+		text-align: center;
+	}
+	
+	#back-top
+	{
+		display: none;
+	}
+
+}

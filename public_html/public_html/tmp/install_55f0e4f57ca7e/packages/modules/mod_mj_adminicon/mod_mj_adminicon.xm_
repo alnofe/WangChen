@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.5.0" type="module" client="administrator" method="upgrade">
+	<name>Mobile Joomla! CPanel Icon</name>
+	<version>2.0.3</version>
+	<creationDate>September 2015</creationDate>
+	<author>Mobile Joomla!</author>
+	<copyright>(C) 2008-2015 Mobile Joomla!</copyright>
+	<authorEmail>hello@mobilejoomla.com</authorEmail>
+	<authorUrl>http://www.mobilejoomla.com</authorUrl>
+	<license>GNU/GPL v2 - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<description>Display MJ icon on cpanel.</description>
+	<files>
+		<filename module="mod_mj_adminicon">mod_mj_adminicon.php</filename>
+	</files>
+</extension>

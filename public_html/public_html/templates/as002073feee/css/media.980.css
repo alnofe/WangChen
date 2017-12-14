@@ -1,0 +1,280 @@
+/***************************************************************************************/
+/*
+/*		Author: AS Designing
+/*		Author URI: http://www.asdesigning.com
+/*		Theme URI: http://www.astemplates.com
+/*		
+/*		Note: Design for Landscape tablets
+/*
+/***************************************************************************************/
+
+@media (max-width: 980px)
+{
+	
+	#header-wrapper, #content-wrapper, .top-wrapper, .top-wrapper .container, #footer-row 
+	{
+		width: 766px;
+	}
+	
+	
+	#featured-row,
+	#featured-row .top
+	{
+		margin-top: 0;
+		padding-top: 0;
+	}
+	
+	#top-header .phone
+  	{
+    	padding-left: 5px;
+  	}
+  
+	
+	.camera_caption h2
+	{
+		font-size: 22px !important;
+		line-height: 25px !important;
+	}
+  
+  	.capton_content
+  	{
+    	top: 25% !important;
+  	}
+  
+  	.camera_caption p
+  	{
+    	display: none;
+  	}
+	
+	#header-row .mod-search
+	{
+		padding-left: 0;
+	}
+	
+	#header-row .btn-search
+	{
+		left: 10px;
+	}
+	
+	#header-row .mod-search_searchword
+	{
+		width: 220px;
+	}
+	
+	#header-row #top-search .moduletable
+	{
+		float: right;
+	}
+	
+	#header-row #top-search .moduletable.social,
+	#header-row #top-search .moduletable.social .nav
+	{
+		float: left;
+	}
+	
+	#header-row #top-search .moduletable.social .nav
+	{
+		margin-top: 10px;
+	}
+	
+	#header-row #top-search .search
+	{
+		margin-right: 10px;	
+	}
+	
+	#header-row .navigation
+	{
+		padding-right: 10px;
+	}
+	
+	#logo
+	{
+		position: relative !important;
+	}
+	
+	#logo span.slogan
+	{
+		display: block;
+		left: 59px;
+		top: -10px;
+		width: auto;
+	}
+	
+	#featured-row .newsflash-title .newsflash-title-wrapper
+	{
+	}
+	
+	#featured-row .mod-newsflash h2, 
+	#featured-row .mod-newsflash h3, 
+	#featured-row .mod-newsflash h4, 
+	#featured-row .mod-newsflash h5
+	{
+		
+	}
+	
+	#featured-row .mod-custom .cal-us
+	{
+		background-image: none;
+		padding: 0px;	
+	}
+	
+	#featured-row .top .big h1, 
+	#featured-row .top .big h2, 
+	#featured-row .top .big h3 
+	{
+		font-size: 68px;
+	}	
+	
+	#as-menu ul.as-menu li:hover ul,
+	#as-menu ul.as-menu li.asHover ul
+	{
+		top: 150px !important;
+	}
+	
+	#as-menu ul.as-menu > li, 
+	#as-menu ul.as-menu > li:hover
+	{
+		background: none !important;
+		padding: 0 !important;
+    	margin-left: 10px !important;
+	}
+	
+	#as-menu ul.as-menu > li > a, 
+	#as-menu ul.as-menu > li > span	
+	{
+	}
+	
+	.nspArt img.nspImage
+	{
+	}
+	
+	.thumbnails
+	{
+		margin-left: -12px;
+	}
+	
+	.thumbnails > li
+	{
+		margin-left: 12px;
+	}
+	
+	.page-category__team .item_introtext
+	{
+		overflow: visible;
+	}
+
+	#slider-row .camera_target_content
+	{
+		
+	}
+
+	#featured-row .mod-newsflash h2, 
+	#featured-row .mod-newsflash h3
+	{
+		width: 100%;	
+	}
+	
+	#featured-row .mod-newsflash p 
+	{
+    	float: none;
+    	overflow: hidden;
+	}
+		
+	.shadow span
+	{
+		left: 2%;
+		width: 96%;
+	}
+	
+	.mod-newsflash-adv__links .item_content h2
+	{
+		line-height: 30px;
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+  	#aside-row-1-left, #aside-row-2-left
+  	{
+    	padding-left: 10px;
+  	}
+  	
+	aside .mod-search input.inputbox 
+	{
+	    width: 180px;
+	}
+
+	aside .mod-search button.btn.btn-search 
+	{
+		margin-top: 15px;
+		padding: 5px 10px 4px;
+	}
+	
+	aside .row-fluid .span6,
+	aside .row-fluid .span6:first-child
+	{
+		width: 100%;
+		margin-left: 15px;	
+	}
+	
+	#back-top
+	{
+		display: none !important;
+	}
+	
+	.page-featured .cols-2 .column-1 
+	{
+		padding-right: 30px;
+	}
+	
+	.page-featured .cols-2 .column-2 
+	{
+		padding-right: 20px;
+	}
+	
+	.page-blog .items-row.cols-3 .item_img.img-intro
+	{
+		width: 95.5%	
+	}
+	
+	.page-item .row-fluid ul li 
+	{
+		font-size: 12px;
+	}	
+	
+	.page-featured h2.advantage_1,
+	.page-featured h2.advantage_2,
+	.page-featured h2.advantage_3,
+	.page-featured h2.advantage_4
+	{
+		line-height: 31px;
+	}
+	
+	.random-image img,
+	.footer-row-1 .span3 .item_img,
+	.footer-row-1 .span4 .item_img
+	{
+		width: 94%;	
+	}
+	
+	.footer-row-1 .span3 img,
+	.footer-row-1 .span4 img	
+	{
+		width: 100%;			
+	}
+	
+	#phocagallery-module-ri .mosaic 
+	{
+    	width: 107px !important;
+	}
+
+	.page-gallery
+	{
+		padding-left: 12px;
+	}
+	
+	.page-gallery .mask .item_introtext
+	{
+		display: none;
+	}
+	
+}

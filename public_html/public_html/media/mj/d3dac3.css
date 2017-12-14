@@ -1,0 +1,9 @@
+
+#jmnewspro-99 .bx-pager{
+      display: none;
+    }#jmnewspro-99 .bx-controls-direction{
+      display: none;
+    }#jmnewspro-99 .bx-controls{
+      left: 0; position: absolute; bottom: -15px;
+    }
+  

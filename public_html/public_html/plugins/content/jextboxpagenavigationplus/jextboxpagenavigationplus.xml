@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>Content - JExtBOX Page Navigation Plus</name>
+	<author>Galaa</author>
+	<creationDate>July 2013</creationDate>
+	<copyright>Copyright (C) 2013-2015 Galaa. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>contact@galaa.mn</authorEmail>
+	<authorUrl>www.jextbox.com</authorUrl>
+	<version>1.2.0</version>
+	<description>PLG_JEXTBOXPAGENAVIGATIONPLUS_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jextboxpagenavigationplus">jextboxpagenavigationplus.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_jextboxpagenavigationplus.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_jextboxpagenavigationplus.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+
+				<field name="position" type="list"
+					default="1"
+					description="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_POSITION_DESC"
+					label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_POSITION_LABEL"
+				>
+					<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_BELOW</option>
+					<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_ABOVE</option>
+				</field>
+
+				<field name="relative" type="list"
+						default="1"
+						description="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_RELATIVE_DESC"
+						label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_RELATIVE_LABEL"
+				>
+						<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_ARTICLE</option>
+						<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_TEXT</option>
+				</field>
+
+				<field name="direction" type="list"
+						default="1"
+						description="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DIRECTION_DESC"
+						label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_DIRECTION_LABEL"
+				>
+						<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_PREVIOUSNEXT</option>
+						<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_NEXTPREVIOUS</option>
+				</field>
+
+				<field name="show_parent" type="list"
+						default="1"
+						description="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_SHOWPARENT_DESC"
+						label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_SHOWPARENT_LABEL"
+				>
+						<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_YES</option>
+						<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_NO</option>
+				</field>
+
+				<field name="parent_type" type="list"
+						default="1"
+						description="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_PARENTTYPE_DESC"
+						label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_PARENTTYPE_LABEL"
+				>
+						<option value="1">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_HOME</option>
+						<option value="0">PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_VALUE_CATEGORY</option>
+				</field>
+
+				<field name="parent_title" type="edit"
+						default=""
+						filter="string"
+						description="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_PARENTTITLE_DESC"
+						label="PLG_JEXTBOXPAGENAVIGATIONPLUS_FIELD_PARENTTITLE_LABEL"
+				/>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

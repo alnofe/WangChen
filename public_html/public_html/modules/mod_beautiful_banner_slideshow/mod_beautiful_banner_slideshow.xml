@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>Beautiful Banner Slideshow</name>
+  <author>joombig.com</author>
+  <creationDate>Nov 2012</creationDate>
+  <copyright>Copyright (C) 2013 joombig.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>support@joombig.com</authorEmail>
+  <authorUrl>www.joombig.com</authorUrl>
+  <version>1.0</version>
+  <description>BEAUTIFUL_BANNER_SLIDESHOW_DESC</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_beautiful_banner_slideshow.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_beautiful_banner_slideshow">mod_beautiful_banner_slideshow.php</filename>
+    <filename>helper.php</filename>
+    <filename>index.html</filename>
+    <folder>tmpl/</folder>
+    <folder>fields/</folder>
+    <folder>helpers/</folder>
+    <folder>language/</folder>
+    <folder>assets/</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/modules/mod_beautiful_banner_slideshow/fields">
+        <field type="assets" url="/modules/mod_beautiful_banner_slideshow/assets" />
+		<field type="loader" />
+        <field type="tmpl" name="sp_style" default="Beautifulbannerslideshow"  label="STYLE" description="STYLE_DESC" />
+		<field name="enable_jQuery" type="radio" default="1" label="Enable/Disable jQuery" description="Select Enable/Disable">
+			<option value="1">Enable</option>
+			<option value="0">Disable</option>
+		</field>
+		<field name="width_module" type="text" default="100%" label="Width of Module(%)" description="Width of Module(%)" />
+		<field name="height_module" type="text" default="300" label="Height of Module" description="Height without px" />
+		<field name="border_module" type="text" default="20" label="Border of Module" description="Border without px" />
+		<field name="border_color" type="hotcolor" default="#333333" label="Color of border" description="Color of border" />
+		<field name="resize_img" type="list" default="1" label="Resize image" description="Select Yes/No">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="shuffle_img" type="list" default="0" label="Shuffle image" description="Select Yes/No">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="auto_play" type="list" default="1" label="Autoplay" description="Autoplay">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</field>
+		<field name="delay_time" type="text" default="6000" label="Delay time" description="Delay time" />
+		<field name="transition_speed" type="text" default="800" label="Transition speed" description="Transition speed" />
+		<field name="show_timer" type="list" default="1" label="Show/Hide timer" description="Show/Hide timer">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		<field name="timer_color" type="hotcolor" default="#FFF" label="Color of timer" description="Color of Timer" />
+		<field name="show_des" type="list" default="1" label="Show/Hide description box" description="Show/Hide description box">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		<field name="style_des" type="list" default="1" label="Display description box" description="Select style display">
+			<option value="1">When hover</option>
+			<option value="0">Always</option>
+		</field>
+		<field name="width_box" type="text" default="auto" label="Width of description box(ex:200)" description="Width without px" />
+		<field name="height_box" type="text" default="auto" label="Height of description box(ex:200)" description="Height without px" />
+		<field name="top_box" type="text" default="50" label="Top of description box" description="Top without px" />
+		<field name="left_box" type="text" default="15" label="Left of description box" description="Left without px" />
+		<field name="background_style" type="list" default="1" label="Background style of box" description="Select style of background of description box">
+			<option value="1">Background color</option>
+			<option value="0">Transparent</option>
+		</field>
+		<field name="background_box" type="hotcolor" default="#000011" label="Background color description box" description="Color of Background" />
+		<field name="fontsize_title" type="text" default="16" label="Font size title" description="without px" />
+		<field name="color_title" type="hotcolor" default="#FFF" label="Color of title" description="Color of title" />
+		<field name="fontsize_des" type="text" default="14" label="Font size description text" description="without px" />
+		<field name="color_des" type="hotcolor" default="#FFF" label="Color of description text" description="Color of description text" />
+		<field name="opacity_box" type="text" default="0.75" label="opacity of description box(0->1)" description="opacity of description box(0->1)" />
+		<field name="show_thumb" type="list" default="1" label="Show/Hide thumb number" description="Show/Hide thumb number">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+		<field name="show_nav" type="list" default="1" label="Show/Hide navigation and player button" description="Show/Hide navigation and player button">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</field>
+      </fieldset>
+
+      <fieldset name="sliders" description="Setting for all item,Click Add New" label="Setting Item">
+        <field type="sliders" name="sliders" />
+      </fieldset>
+	  <fieldset name="animation">
+        <field type="animation" name="animation" />
+      </fieldset>
+      <fieldset name="advanced">	  
+		<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		<field name="module_cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+		<option value="1">JGLOBAL_USE_GLOBAL</option>
+		<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		</field>
+		<field name="cache" type="hidden" default="1" />
+		<field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+		<field name="cachemode" type="hidden" default="itemid">
+			<option value="itemid"></option>
+		</field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

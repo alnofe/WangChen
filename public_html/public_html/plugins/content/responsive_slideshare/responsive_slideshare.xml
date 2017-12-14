@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>Content - Responsive Slideshare</name>
+	<author>ColorPack Creations Co., Ltd.</author>
+	<creationDate>Oct 2013</creationDate>
+	<copyright>ColorPack Creations Co., Ltd. 2013. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>office@colorpack.co.th</authorEmail>
+	<authorUrl>colorpack.co.th</authorUrl>
+	<version>1.0</version>
+	<description>
+	<![CDATA[
+<p>With this plugin, you can embed Slideshare into articles simply by copying and pasting a Slideshare ID between the slideshare flags: {slideshare}xxxxxx{/slideshare}.  use Slideshare ID if 14167122 <br/><br/>Then you would insert the following text to your article:<br/>
+{slideshare}14167122{/slideshare}</p>
+	]]>
+	</description>
+	<files>
+		<filename plugin="responsive_slideshare">responsive_slideshare.php</filename>
+		<filename plugin="responsive_slideshare">responsive_slideshare.css</filename>
+		<filename plugin="responsive_slideshare">index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="width" type="text" default="640" label="Width" description="Width of the Slideshare. Default width is 640 pixels." />
+				<field name="height" type="text" default="360" label="Height" description="Height of the Slideshare. Default height is 360 pixels." />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

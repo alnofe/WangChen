@@ -1,0 +1,242 @@
+/*
+#------------------------------------------------------------------------
+# Package - JoomlaMan JMSlideShow
+# Version 1.0
+# -----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright © 2012 - 2013 JoomlaMan.com. All Rights Reserved.
+# @license http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 or Later
+# Websites: http://www.JoomlaMan.com
+#------------------------------------------------------------------------
+*/
+.jmnewspro.layout6 {
+  padding: 20px 0;
+  position: relative;
+  color: #E5E5E5;
+  direction: ltr;
+}
+.jmnewspro.layout6  .slide-item-image{
+  border: 1px solid #ebebeb;
+  padding: 2px;
+}
+.jmnewspro.layout6  .slide-item-title{
+  color: #FFC92B;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.jmnewspro.layout6  .slide-item-title a:hover,
+.jmnewspro.layout6 span.slide-item-readmore a:hover{
+  color: #FE8F0A;
+}
+.jmnewspro.layout6  .slide-item-title a,
+.jmnewspro.layout6 span.slide-item-readmore a{
+  color: #FFC92B;
+  font-size:16px;
+}
+.jmnewspro.layout6 .slide-item-desc {
+  font-size:12px;
+  padding-bottom:10px;
+}
+.jmnewspro.layout6 .jmnewspro-prev a,
+.jmnewspro.layout6 .jmnewspro-next a{
+  cursor: pointer;
+  display: block;
+  height: 40px;
+  overflow: hidden;
+  position: absolute;
+  top: 75px;
+  width: 20px;
+}
+.jmnewspro.layout6 .jmnewspro-prev a{
+  background: url("../images/button.png") no-repeat scroll 0 -40px transparent;
+}
+.jmnewspro.layout6 .jmnewspro-next a{
+  background: url("../images/button.png") no-repeat scroll 0 0 transparent;
+  right: 0;
+}
+.jmnewspro.layout6 .slide-inner{
+  padding:0px!important;
+}
+.jmnewspro.layout6 .slide-inner .padding{
+  padding: 0 8px !important
+}
+.jmnewspro.layout6 .bx-wrapper {
+  position: relative;
+  margin: 0 auto 0;
+  padding: 0;
+  *zoom: 1;
+}
+.jmnewspro.layout6 .bx-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+/** THEME
+===================================*/
+.jmnewspro.layout6 .bx-pager ul{
+  list-style-type: none !important;
+  margin: 3px 0 0 !important;
+  padding: 0 !important;
+  float: left;
+}
+.jmnewspro.layout6 .bx-pager ul li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin: 0 4px 0 0 !important;
+}
+.jmnewspro.layout6 .bx-pager ul li a{
+  background: url('../images/interface.png') no-repeat 50% 0;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+.jmnewspro.layout6 .bx-pager ul li a:hover,
+.jmnewspro.layout6 .bx-pager ul li a.active {
+  background-position: 50% -8px;
+}
+.slide-inner {
+  padding: 0 8px!important;
+  float: left;
+}
+.css3 .view{
+  float: none!important;
+}
+/** CSS3 effect
+===================================*/
+.jmnewspro.layout6 .slide-item-wrap-item img {
+  -webkit-transition: all 0.4s ease-in-out 0.5s;
+  -moz-transition: all 0.4s ease-in-out 0.5s;
+  -o-transition: all 0.4s ease-in-out 0.5s;
+  -ms-transition: all 0.4s ease-in-out 0.5s;
+  transition: all 0.4s ease-in-out 0.5s;
+}
+
+.jmnewspro.layout6 .slide-item-wrap-item .slide-item-desc-warp {
+  background-color: rgba(0,0,0,0.8);
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in 0.4s;
+  -moz-transition: all 0.3s ease-in 0.4s;
+  -o-transition: all 0.3s ease-in 0.4s;
+  -ms-transition: all 0.3s ease-in 0.4s;
+  transition: all 0.3s ease-in 0.4s;
+}
+
+
+.jmnewspro.layout6 .slide-item-wrap-item .slide-item-title {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 20px 30px 0px 30px;
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -o-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  -moz-transition: all 0.3s ease-in-out 0.1s;
+  -o-transition: all 0.3s ease-in-out 0.1s;
+  -ms-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
+
+}
+.jmnewspro.layout6 .slide-item-wrap-item .slide-item-desc {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -o-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  -webkit-transition: all 0.3s ease-in-out 0.2s;
+  -moz-transition: all 0.3s ease-in-out 0.2s;
+  -o-transition: all 0.3s ease-in-out 0.2s;
+  -ms-transition: all 0.3s ease-in-out 0.2s;
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.jmnewspro.layout6 .slide-item-wrap-item .slide-item-readmore .slide-item-readmore a {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -o-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
+  -webkit-transition: all 0.3s ease-in-out 0.1s;
+  -moz-transition: all 0.3s ease-in-out 0.1s;
+  -o-transition: all 0.3s ease-in-out 0.1s;
+  -ms-transition: all 0.3s ease-in-out 0.1s;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.jmnewspro.layout6 .slide-item-wrap-item:hover .slide-item-desc-warp{
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.jmnewspro.layout6 .slide-item-wrap-item:hover img{
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  -ms-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.jmnewspro.layout6 .slide-item-wrap-item:hover .slide-item-title{
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.jmnewspro.layout6 .slide-item-wrap-item:hover .slide-item-desc{
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -ms-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.jmnewspro.layout6 .slide-item-wrap-item:hover .slide-item-readmore a {
+  -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -ms-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+

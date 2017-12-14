@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>MOD_JO_VERTICAL_SLIDESHOWIMAGES</name>
+	<author>http://www.joomcore.com/</author>
+	<creationDate>11th October, 2012</creationDate>
+	<copyright>http://www.joomcore.com. All rights reserved.</copyright>
+	<authorEmail>contact@joomcore.com</authorEmail>
+	<authorUrl>http://www.joomcore.com/</authorUrl>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>3.0</version>
+	<description>MOD_JO_VERTICAL_SLIDESHOWIMAGES_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_jo_vertical_slideshowimages">mod_jo_vertical_slideshowimages.php</filename>
+		<filename>index.html</filename> 
+		<filename>helper.php</filename>
+		<folder>language</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<folder>demo</folder>
+	</files>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_NETQCREATIVE" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+				<field name="type" type="list" default="png" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_TYPE_OF_IMAGE" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_TYPE_OF_IMAGE_DESC" >
+					<option value="png">MOD_JO_VERTICAL_SLIDESHOWIMAGES_PNG</option>
+					<option value="jpg">MOD_JO_VERTICAL_SLIDESHOWIMAGES_JPG</option>
+					<option value="gif">MOD_JO_VERTICAL_SLIDESHOWIMAGES_GIF</option>
+				</field>	
+				<field name="folder" type="text" size="60" default="modules/mod_jo_vertical_slideshowimages/demo/" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_PATH_OF_IMAGES" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_PATH_OF_IMAGES_DESC" />
+				<field name="width" type="text" default="665" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_WIDTH_OF_MODULE" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_WIDTH_OF_MODULE_DESC" />
+				<field name="height" type="text" default="385" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_HEIGHT_OF_MODULE" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_HEIGHT_OF_MODULE_DESC" />
+				<field name="leftright" type="list" default="left" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_LEFT_RIGHT" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_LEFT_RIGHT_DESC">
+					<option value="left">MOD_JO_VERTICAL_SLIDESHOWIMAGES_LEFT</option>
+					<option value="right">MOD_JO_VERTICAL_SLIDESHOWIMAGES_RIGHT</option>
+				</field>
+				<field name="thumbnailwidth" type="text" default="140" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_THUMB_WIDTH_OF_SCROLL" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_THUMB_WIDTH_OF_SCROLL_DESC" />
+				<field name="thumbnailheight" type="text" default="110" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_THUMB_HEIGHT_OF_SCROLL" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_THUMB_HEIGHT_OF_SCROLL_DESC" />
+				<field name="interval" type="text" default="5000" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_INTERVAL" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_INTERVAL_DESC" />
+				<field name="easing_type" type="list" default="easeInQuad" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_EASING_TYPE" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_EASING_TYPE_DESC">
+					<option value="jswing">jswing</option>
+					<option value="def">def</option>
+					<option value="easeInQuad">easeInQuad</option>
+					<option value="easeOutQuad">easeOutQuad</option>
+					<option value="easeInOutQuad">easeInOutQuad</option>
+					<option value="easeInCubic">easeInCubic</option>
+					<option value="easeOutCubic">easeOutCubic</option>
+					<option value="easeInOutCubic">easeInOutCubic</option>
+					<option value="easeInQuart">easeInQuart</option>
+					<option value="easeOutQuart">easeOutQuart</option>
+					<option value="easeInOutQuart">easeInOutQuart</option>
+					<option value="easeInQuint">easeInQuint</option>
+					<option value="easeOutQuint">easeOutQuint</option>
+					<option value="easeInOutQuint">easeInOutQuint</option>
+					<option value="easeInSine">easeInSine</option>
+					<option value="easeOutSine">easeOutSine</option>
+					<option value="easeInOutSine">easeInOutSine</option>
+					<option value="easeInExpo">easeInExpo</option>
+					<option value="easeOutExpo">easeOutExpo</option>
+					<option value="easeInOutExpo">easeInOutExpo</option>
+					<option value="easeInCirc">easeInCirc</option>
+					<option value="easeOutCirc">easeOutCirc</option>
+					<option value="easeInOutCirc">easeInOutCirc</option>
+					<option value="easeInElastic">easeInElastic</option>
+					<option value="easeOutElastic">easeOutElastic</option>
+					<option value="easeInOutElastic">easeInOutElastic</option>
+					<option value="easeInBack">easeInBack</option>
+					<option value="easeOutBack">easeOutBack</option>
+					<option value="easeInOutBack">easeInOutBack</option>
+					<option value="easeInBounce">easeInBounce</option>
+					<option value="easeOutBounce">easeOutBounce</option>
+					<option value="easeInOutBounce">easeInOutBounce</option>
+				</field>
+				<field name="auto_start" type="radio" class="btn-group" default="1" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_AUTO_START" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_AUTO_START_DESC">
+					<option value="0">MOD_JO_VERTICAL_SLIDESHOWIMAGES_NO</option>
+					<option value="1">MOD_JO_VERTICAL_SLIDESHOWIMAGES_YES</option>
+				</field>
+				<field name="maxitem" type="text" default="3" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_MAX_IMAGE_DISPLAY" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_MAX_IMAGE_DISPLAY_DESC" />
+				
+				<field name="add_url_image" type="radio" class="btn-group" default="0" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_ADD_URL_IMAGE" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_ADD_URL_IMAGE_DESC">
+					<option value="0">MOD_JO_VERTICAL_SLIDESHOWIMAGES_NO</option>
+					<option value="1">MOD_JO_VERTICAL_SLIDESHOWIMAGES_YES</option>
+				</field>
+				<field name="urls" type="textarea" default="" label="MOD_JO_VERTICAL_SLIDESHOWIMAGES_URL_IMAGE" description="MOD_JO_VERTICAL_SLIDESHOWIMAGES_URL_IMAGE_DESC" cols="50" rows="15" /> 
+			</fieldset>
+		</fields>
+	</config>
+</extension>	

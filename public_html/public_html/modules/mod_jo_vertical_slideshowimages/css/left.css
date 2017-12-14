@@ -1,0 +1,197 @@
+/* slider layout */
+.jo-vertical-slideimages { 
+	position:relative;	
+	overflow:hidden;
+}
+.jo-vertical-slideimages .preload{	
+	height:100%;	
+	width:100%;	
+	position:absolute;	
+	top:0;	
+	left:0;	
+	z-index:100000;	
+	text-align:center;
+}
+.jo-vertical-slideimages .preload div{	
+	height:100%;	
+	width:100%;	
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;
+}
+
+.jo-vertical-slideimages  .sliders-wrapper{	
+	position:relative;	
+	height:100%;	
+	width:900px;	
+	z-index:3px;	
+	overflow:hidden; 
+}
+.jo-vertical-slideimages  ul.jo-vertical-sliders-wrap-inner{
+	overflow:hidden;	
+	background:transparent url(../images/load-indicator.gif) no-repeat scroll 50% 50%;	
+	padding:0px;	
+	margin:0;	
+	position:absolute;	
+	overflow:hidden;
+}
+.jo-vertical-slideimages  ul.jo-vertical-sliders-wrap-inner li{
+	overflow:hidden;	
+	padding:0px;
+	margin:0px;	
+	float:left;	position:relative;
+}
+.jo-vertical-slideimages  .lof-opacity { 
+	width:100%; 
+	height:100%; 
+}
+.jo-vertical-slideimages  .lof-opacity  li{
+	position:absolute!important;	
+	top:0;	
+	left:0;	
+	float:inherit!important; 
+}
+
+
+.jo-vertical-slideimages  .jo-vertical-navigator-images {
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:9;
+	overflow:hidden;
+	padding-left:0px;
+}
+.jo-vertical-slideimages  .jo-vertical-navigator-wrapper{	
+	position:relative;	
+	z-index:10;	
+	overflow:hidden;
+	color:#FFF;
+	float:left
+}
+.jo-vertical-slideimages  ul.jo-vertical-navigator-wrap-inner{	
+	top:0;	
+	padding:0;	
+	margin:0;	
+	position:absolute;	
+	width:100%; 
+}
+.jo-vertical-slideimages  ul.jo-vertical-navigator-wrap-inner li{ 
+	cursor:hand; 	
+	cursor:pointer;	
+	list-style:none;	
+	padding:0;	
+	margin-left:0px;	
+	overflow:hidden;	
+	float:left;	
+	display:block;	
+	text-align:center;
+}
+
+/*******************************************************/
+ 
+ul.jo-vertical-sliders-wrap-inner li img{
+	padding:0px;	
+}
+
+.jo-vertical-slideimages .slider-description a.readmore{
+	color:#58B1EA; 
+	font-size:95%; 
+}
+.jo-vertical-slideimages .slider-description a{ 
+	color:#FFF; 	
+}
+.jo-vertical-slideimages .slider-description{
+	z-index:100px;
+	position:absolute;
+	bottom:86px;
+	right:0px;
+	padding:10px;
+	color:#FFF;
+}
+.jo-vertical-slideimages .slider-description h4 {    
+	font-size: 14px;   
+	margin: 10px 0;    
+	padding: 0; 
+}
+.jo-vertical-slideimages .slider-description .slider-meta a{	
+	margin:0;
+	font-size:75%;
+	padding:2px 3px;
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,sans-serif;
+	text-transform:uppercase;
+	text-decoration:none
+}
+.jo-vertical-slideimages  .item-meta a:hover{	
+	text-decoration:underline;
+}
+.jo-vertical-slideimages  .item-meta i {	
+	font-size:70%; 
+}
+
+/* item navigator */
+.jo-vertical-slideimages ul.jo-vertical-navigator-wrap-inner  li.active{ }
+.jo-vertical-slideimages ul.jo-vertical-navigator-wrap-inner  li >  div{}
+	
+.jo-vertical-slideimages ul.jo-vertical-navigator-wrap-inner li.active div{
+	color:#FFF;
+}
+.jo-vertical-slideimages ul.jo-vertical-navigator-wrap-inner li img{
+	margin:15px 15px 10px 0px;
+	float:left;
+	border:#C5C5C5 solid 1px;
+}
+.jo-vertical-slideimages ul.jo-vertical-navigator-wrap-inner li.active img, 
+.jo-vertical-slideimages ul.jo-vertical-navigator-wrap-inner li:hover img {
+	border:#6C8E5C  solid 1px;
+}
+.jo-vertical-slideimages  .button-next, 
+.jo-vertical-slideimages .button-previous{
+	display:block;
+	width:40px;
+	color:#FFF;
+	cursor:pointer;
+	position:absolute;
+	height:100%;
+	z-index:40;
+	top:0;
+	text-indent:-999px;
+
+}
+.jo-vertical-slideimages   .button-next {
+	right:0px;
+	background:url(../images/next.png) no-repeat right center;
+}
+.jo-vertical-slideimages  .button-previous {
+	left:0px;
+	background:url(../images/previous.png) no-repeat left center;
+}
+
+
+.jo-vertical-slideimages .button-control {
+	position:absolute;
+	top:10px;
+	right:48%;
+	height: 20px;
+	width: 20px;
+	cursor:hand; cursor:pointer;
+	background:url(../images/transparent_bg.png) repeat;
+}
+
+.jo-vertical-slideimages .button-control span { 
+	display:block;  
+	width:100%; 
+	height:100%;
+}
+.jo-vertical-slideimages .action-start span  {
+	background:url(../images/play.png) no-repeat center center;
+}
+.jo-vertical-slideimages .action-stop span {
+	background:url(../images/pause.png) no-repeat center center;
+}
+.jo-vertical-main-slider-images{
+	margin-left: 0px;
+	float: right;
+	overflow: hidden;
+}
+.jo-vertical-navigator-wrapper ul{
+	margin: 0px !important;
+	padding: 0px !important;
+}

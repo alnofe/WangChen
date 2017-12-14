@@ -1,0 +1,106 @@
+/***************************************************************************************/
+/*
+/*		Author: AS Designing
+/*		Author URI: http://www.asdesigning.com
+/*		Theme URI: http://www.astemplates.com
+/*		
+/*		Note: Designed for Desktops
+/*
+/***************************************************************************************/
+
+@media (max-width: 1199px) 
+{
+	body
+	{
+		overflow-x: hidden;	
+	}
+	
+	#header-wrapper,
+	#content-wrapper,
+	.top-wrapper,
+	.top-wrapper .container,
+	#footer-row
+	{
+		width: 1000px;
+	}
+	
+	#as-menu ul.as-menu li:hover ul,
+	#as-menu ul.as-menu li.asHover ul
+	{
+		top: 160px !important;
+	}
+		
+	#as-menu ul.as-menu > li, 
+	#as-menu ul.as-menu > li:hover
+	{
+		padding: 5px 15px !important;
+	}
+		
+	#slider-row #camera-slideshow	
+	{
+		min-height: inherit;
+	}
+	
+	#slider-row .camera_target_content
+	{
+	}
+
+  	.capton_content
+  	{
+    	top: 5% !important;
+  	}
+  
+	.camera_caption p
+	{
+		display: block;	
+	}
+		
+	#slider-row .camera_caption a.readmore
+	{
+		right: 60px;
+	}
+	
+	#featured-row .mod-newsflash p 
+	{
+    	float: none;
+    	overflow: hidden;
+		clear: both;
+	}
+	
+	#featured-row .mod-custom .cal-us h2 
+	{
+		font-size: 24px;
+		letter-spacing: -1px;
+	}
+
+	.moduletable.social ul li.separator 
+	{
+		display: block;
+	}
+		
+	.mod-newsflash-adv__links .item_content ul li a
+	{
+		font-size: 12px;
+	}
+	
+	.nspArt img.nspImage
+	{
+		width: 100%;
+	}
+	
+	.page-category .img-intro__left,
+	.page-category .img-intro__right
+	{
+		float: none;	
+	}
+	
+	#phocagallery-module-ri .mosaic
+	{
+		width: 138px !important;	
+	}
+	
+	aside .moduletable .mod-custom ul li a
+	{
+	}
+	
+}
